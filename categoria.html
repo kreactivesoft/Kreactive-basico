@@ -526,46 +526,88 @@
         <div class="card-header">
           <h3 class="card-title">Modulo Categoria</h3>
         </div>
+        <div class="col-12 col-sm-12">
+          <div class="card card-primary card-outline card-outline-tabs">
+            <div class="card-header p-0 border-bottom-0">
+              <ul class="nav nav-tabs" id="custom-tabs-four-tab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="custom-tabs-four-home-tab" data-toggle="pill"
+                    href="#custom-tabs-four-home" role="tab" aria-controls="custom-tabs-four-home"
+                    aria-selected="true">Categorias</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="custom-tabs-four-profile-tab" data-toggle="pill"
+                    href="#custom-tabs-four-profile" role="tab" aria-controls="custom-tabs-four-profile"
+                    aria-selected="false"></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="custom-tabs-four-messages-tab" data-toggle="pill"
+                    href="#custom-tabs-four-messages" role="tab" aria-controls="custom-tabs-four-messages"
+                    aria-selected="false"></a>
+                </li>
+              </ul>
+            </div>
+            <div class="card-body">
+              <div class="tab-content" id="custom-tabs-four-tabContent">
+                <div class="tab-pane fade show active" id="custom-tabs-four-home" role="tabpanel"
+                  aria-labelledby="custom-tabs-four-home-tab">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <div class="form-group">
+                          <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                            <label class="custom-control-label" for="customSwitch1">Manejo Inventario</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <!-- text input -->
+                        <h6><i class="fa fa-hashtag"></i> Codigo Categoria</h6>
+                        <div class="form-group">
+                          <div class="input-group">
+                            <div class="input-group-prepend">
+                            </div>
+                            <input type="text" class="form-control form-control-border" id="exampleInputBorder">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-8">
+                        <!-- text input -->
+                        <h6> <i class="fa fa-users"></i> Categoria</h6>
+                        <div class="form-group">
+                          <div class="input-group">
+                            <div class="input-group-prepend">
+                            </div>
+                            <input type="text" class="form-control form-control-border" id="exampleInputBorder">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card ">
+                      <button type="button" class="btn btn-block btn-success">Guardar</button>
+                    </div>
+                    
+                <div class="tab-pane fade" id="custom-tabs-four-profile" role="tabpanel"
+                  aria-labelledby="custom-tabs-four-profile-tab">
+
+                 </div>
+
+                <div class="tab-pane fade" id="custom-tabs-four-messages" role="tabpanel"
+                  aria-labelledby="custom-tabs-four-messages-tab">
+
+                </div>
+              </div>
+            </div>
+            <!-- /.card -->
+          </div>
+        </div>
+        <!-- ./section app -->
+      </div>
         <!-- /.card-header -->
-        <div class="card-body">
-          <div class="row">
-            <div class="col-sm-6">
-          <div class="form-group">
-            <div class="custom-control custom-switch">
-              <input type="checkbox" class="custom-control-input" id="customSwitch1">
-              <label class="custom-control-label" for="customSwitch1">Manejo Inventario</label>
-            </div>
-          </div>
-            </div>
-            <div class="col-sm-6">
-          <div class="form-group">
-            <div class="custom-control custom-switch">
-              <input type="checkbox" class="custom-control-input" id="customSwitch1">
-              <label class="custom-control-label" for="customSwitch1">activar</label>
-            </div>
-          </div>
-            </div>
-          </div>
-      
-          <div class="row">
-            <div class="col-sm-3">
-              <!-- text input -->
-              <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                  <span class="input-group-text"><i class="fas fa-envelope"></i></span>
-                </div>
-                <input type="text" class="form-control" placeholder="Codigo Categoria">
-              </div>
-            </div>
-            <div class="col-sm-9">
-              <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                  <span class="input-group-text"><i class="fas fa-envelope"></i></span>
-                </div>
-                <input type="text" class="form-control" placeholder="Categoria">
-              </div>
-            </div>
-          </div>
+        
       <!-- Main Footer -->
       <footer class="main-footer">
         <strong>Realizado por <a href="https://kreactivesoft.com">Kreactivesoft.com</a>.</strong>

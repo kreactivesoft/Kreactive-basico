@@ -524,232 +524,213 @@
       <!-- section app -->
       <div class="card card-warning">
         <div class="card-header">
-          <h3 class="card-title">Módulo Clientes</h3>
+          <h3 class="card-title">Módulo Factura</h3>
         </div>
-        <div class="col-12 col-sm-12">
-          <div class="card card-primary card-outline card-outline-tabs">
-            <div class="card-header p-0 border-bottom-0">
-              <ul class="nav nav-tabs" id="custom-tabs-four-tab" role="tablist">
-                <li class="nav-item">
-                  <a class="nav-link active" id="custom-tabs-four-home-tab" data-toggle="pill"
-                    href="#custom-tabs-four-home" role="tab" aria-controls="custom-tabs-four-home"
-                    aria-selected="true">Basica</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" id="custom-tabs-four-profile-tab" data-toggle="pill"
-                    href="#custom-tabs-four-profile" role="tab" aria-controls="custom-tabs-four-profile"
-                    aria-selected="false">Información Adicional</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" id="custom-tabs-four-messages-tab" data-toggle="pill"
-                    href="#custom-tabs-four-messages" role="tab" aria-controls="custom-tabs-four-messages"
-                    aria-selected="false"></a>
-                </li>
-              </ul>
+      
+          <!-- Main content -->
+          <section class="invoice">
+            <!-- title row -->
+            <div class="row">
+              <div class="col-12">
+                <h2 class="page-header">
+                  <i class="fas fa-globe"></i> kreactivesoft.
+                  <small class="float-right">Date: 02/02/2020</small>
+                </h2>
+              </div>
+              <!-- /.col -->
             </div>
-            <div class="card-body">
-              <div class="tab-content" id="custom-tabs-four-tabContent">
-                <div class="tab-pane fade show active" id="custom-tabs-four-home" role="tabpanel"
-                  aria-labelledby="custom-tabs-four-home-tab">
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-sm-4">
-                        <div class="form-group">
-                          <div class="custom-control custom-switch">
-                            <input type="checkbox" class="custom-control-input" id="customSwitch1">
-                            <label class="custom-control-label" for="customSwitch1">Persona Juridica</label>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-sm-4">
-                        <div class="form-group">
-                          <div class="custom-control custom-switch">
-                            <input type="checkbox" class="custom-control-input" id="customSwitch2">
-                            <label class="custom-control-label" for="customSwitch2">Sujeto IVA</label>
-                          </div>
-                        </div>
-                      </div>
+            <!-- info row -->
+            <div class="col-12 col-sm-12">
+              <div class="card card-primary card-outline card-outline-tabs">
+                <div class="card-header p-0 border-bottom-0">
+                  <ul class="nav nav-tabs" id="custom-tabs-four-tab" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" id="custom-tabs-four-home-tab" data-toggle="pill"
+                        href="#custom-tabs-four-home" role="tab" aria-controls="custom-tabs-four-home"
+                        aria-selected="true">2012301012</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="custom-tabs-four-profile-tab" data-toggle="pill"
+                        href="#custom-tabs-four-profile" role="tab" aria-controls="custom-tabs-four-profile"
+                        aria-selected="false">Detalles</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="custom-tabs-four-messages-tab" data-toggle="pill"
+                        href="#custom-tabs-four-messages" role="tab" aria-controls="custom-tabs-four-messages"
+                        aria-selected="false">Recibos</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-body">
+                  <div class="tab-content" id="custom-tabs-four-tabContent">
+                    <div class="tab-pane fade show active" id="custom-tabs-four-home" role="tabpanel"
+                      aria-labelledby="custom-tabs-four-home-tab">
+            <div class="row invoice-info">
+              <div class="col-sm-2 invoice-col">
+                <div class="form-group">
+                  <div class="input-group-prepend">
+                  </div>
+                  <select class="custom-select form-control-border" id="exampleSelectBorder" >
+                    <option value="contado" selected>Contado</option>
+                    <option value="cliente1">Cliente1</option>
+                    <option value="cliente2">Cliente2</option>
+                  </select>
+              </div>
+            </div>
+            <div class="col-sm-2 invoice-col">
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                  </div>
+                  <input type="date" class="form-control form-control-border" id="exampleInputBorder"> 
+                </div>
+              </div> 
+            </div>
+              <div class="col-sm-2 invoice-col">
+                <div class="form-group">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">
+                        <i class="fa fa-address-book"></i>
+                      </span>
                     </div>
-                    <div class="row">
-                      <div class="col-sm-4">
-                        <!-- text input -->
-                        <h6><i class="fa fa-hashtag"></i> Codigo Cliente</h6>
-                        <div class="form-group">
-                          <div class="input-group">
-                            <div class="input-group-prepend">
-                            </div>
-                            <input type="text" class="form-control form-control-border" id="exampleInputBorder">
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-sm-8">
-                        <!-- text input -->
-                        <h6> <i class="fa fa-users"></i> Razon Social</h6>
-                        <div class="form-group">
-                          <div class="input-group">
-                            <div class="input-group-prepend">
-                            </div>
-                            <input type="text" class="form-control form-control-border" id="exampleInputBorder">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="row">
-                      <div class="col-sm-4">
-                        <!-- text input -->
-                        <h6><i class="fa fa-phone"></i> Telefono</h6>
-                        <div class="form-group">
-                          <div class="input-group">
-                            <div class="input-group-prepend">
-                            </div>
-                            <input type="text" class="form-control form-control-border" id="exampleInputBorder">
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-sm-4">
-                        <!-- text input -->
-                        <h6><i class="fa fa-mobile"></i> Movil</h6>
-                        <div class="form-group">
-                          <div class="input-group">
-                            <div class="input-group-prepend">
-                            </div>
-                            <input type="text" class="form-control form-control-border" id="exampleInputBorder">
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-sm-4">
-                        <!-- text input -->
-                        <h6><i class="fa fa-envelope"></i> Email</h6>
-                        <div class="form-group">
-                          <div class="input-group">
-                            <div class="input-group-prepend">
-                            </div>
-                            <input type="text" class="form-control form-control-border" id="exampleInputBorder">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-sm-4">
-                        <!-- select -->
-                        <h6><i class="fa fa-id-card"></i> ID Fiscal</h6>
-                        <div class="form-group">
-                          <div class="input-group-prepend">
-                          </div>
-                          <select class="custom-select form-control-border" id="exampleSelectBorder">
-                            <option>CI</option>
-                            <option>RIF</option>
-                            <option></option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="col-sm-4">
-                        <!-- text input -->
-                        <h6><i class="fa fa-hashtag"></i> Numero Fiscal</h6>
-                        <div class="form-group">
-                          <div class="input-group">
-                            <div class="input-group-prepend">
-                            </div>
-                            <input type="text" class="form-control form-control-border" id="exampleInputBorder">
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-sm-4">
-                        <!-- select -->
-                        <h6><i class="fa fa-user-tie"></i> Tipo Cliente</h6>
-                        <div class="form-group">
-                          <div class="input-group-prepend">
-                            <!-- <span class="input-group-text">
-                              <i class="fa fa-address-book"></i>
-                            </span> -->
-                          </div>
-                          <select class="custom-select form-control-border" id="exampleSelectBorder">
-                            <option>CLiente</option>
-                            <option>Cliente Potenciales</option>
-                            <option></option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-sm-12">
-                        <!-- text input -->
-                        <h6><i class="fa fa-house-user"></i> Direccion</h6>
-                        <div class="form-group">
-                          <div class="input-group">
-                            <div class="input-group-prepend">
-                            </div>
-                            <textarea type="text" class="form-control form-control-border"
-                              id="exampleInputBorder"></textarea>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                    <input type="text" class="form-control form-control-border" id="exampleInputBorder" placeholder="001"> 
                   </div>
                 </div>
-                <div class="tab-pane fade" id="custom-tabs-four-profile" role="tabpanel"
-                  aria-labelledby="custom-tabs-four-profile-tab">
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-sm-3">
-                        <!-- text input -->
-                        <h6><i class="fa fa-user"></i> Contacto</h6>
-                        <div class="form-group">
-                          <div class="input-group">
-                            <div class="input-group-prepend">
-                            </div>
-                            <input type="text" class="form-control form-control-border" id="exampleInputBorder">
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-sm-3">
-                        <!-- text input -->
-                        <h6><i class="fa fa-mobile"></i> Movil</h6>
-                        <div class="form-group">
-                          <div class="input-group">
-                            <div class="input-group-prepend">
-                            </div>
-                            <input type="text" class="form-control form-control-border" id="exampleInputBorder">
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-sm-3">
-                        <!-- text input -->
-                        <h6><i class="fa fa-envelope"></i> Email</h6>
-                        <div class="form-group">
-                          <div class="input-group">
-                            <div class="input-group-prepend">
-                            </div>
-                            <input type="text" class="form-control form-control-border" id="exampleInputBorder">
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-sm-3">
-                        <!-- text input -->
-                        <h6>Fecha nacimiento</h6>
-                        <div class="form-group">
-                          <div class="input-group">
-                            <div class="input-group-prepend">
-                            </div>
-                            <input type="date" class="form-control form-control-border" id="exampleInputBorder">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="tab-pane fade" id="custom-tabs-four-messages" role="tabpanel"
-                  aria-labelledby="custom-tabs-four-messages-tab">
-
+              </div>
+            <div class="col-sm-2 invoice-col">
+                <div class="form-group">
+                  <div class="input-group-prepend">
+                      <select class="custom-select form-control-border" id="exampleSelectBorder" >
+                        <option value="contado" selected>Contado</option>
+                        <option value="credito">Credito</option>
+                      </select>
                 </div>
               </div>
             </div>
-            <!-- /.card -->
-          </div>
-        </div>
-        <!-- ./section app -->
-      </div>
+            <div class="col-sm-2 invoice-col">
+              <div class="form-group">
+                <div class="input-group-prepend">
+                <select class="custom-select form-control-border" id="exampleSelectBorder" >
+                  <option value="bolivares" selected>Bolivares</option>
+                  <option value="dolares">Dolares</option>
+                </select>
+               </div>
+              </div>
+            </div> 
+            </div>
+            <div class="wrapper">
+              <div class="row">
+                <div class="col-12 table-responsive">
+                  <table class="table table-striped">
+                    <thead>
+                    <tr>
+                      <th>Referencia</th>
+                      <th>Descripción</th>
+                      <th>Cantidad</th>
+                      <th>Precio</th>
+                      <th>%Dto.</th>
+                      <th>Neto</th>
+                      <th>Impuesto</th>
+                      <th>Sub-Total</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td>1235</td>
+                      <td>Call of Duty</td>
+                      <td>10</td>
+                      <td>12.00</td>
+                      <td>$64.50</td>
+                      <th>0</th>
+                      <th>0</th>
+                      <th>0</th>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!-- /.col -->
+              </div>
+              </div>
+              <div class="row invoice-info">
+                <div class="col-sm-2 invoice-col">
+                    <h6>Sub-Total</h6>
+                    <div class="form-group">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                        </div>
+                        <input type="text" class="form-control form-control-border" id="exampleInputBorder"> 
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-2 invoice-col">
+                    <h6>Dto Global1</h6>
+                    <div class="form-group">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                        </div>
+                        <input type="text" class="form-control form-control-border" id="exampleInputBorder"> 
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-2 invoice-col">
+                    <h6>Dto.Global2</h6>
+                    <div class="form-group">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                        </div>
+                        <input type="text" class="form-control form-control-border" id="exampleInputBorder"> 
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-2 invoice-col">
+                    <h6>Neto</h6>
+                    <div class="form-group">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                        </div>
+                        <input type="text" class="form-control form-control-border" id="exampleInputBorder"> 
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-2 invoice-col">
+                    <h6>Impuestos</h6>
+                    <div class="form-group">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                        </div>
+                        <input type="text" class="form-control form-control-border" id="exampleInputBorder"> 
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-2 invoice-col">
+                    <h6>Total</h6>
+                    <div class="form-group">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                        </div>
+                        <input type="text" class="form-control form-control-border" id="exampleInputBorder"> 
+                      </div>
+                    </div>
+                  </div>
+            <!-- /.row -->
+        
+            <!-- Table row -->
+            <div class="tab-pane fade" id="custom-tabs-four-profile" role="tabpanel"
+            aria-labelledby="custom-tabs-four-profile-tab">
+            
+            </div>
+            <!-- /.row -->
 
       <!-- Main Footer -->
       <footer class="main-footer">
@@ -802,13 +783,9 @@
         })
 
         //Datemask dd/mm/yyyy
-        $('#datemask').inputmask('dd/mm/yyyy', {
-          'placeholder': 'dd/mm/yyyy'
-        })
+        $('#datemask').inputmask('dd/mm/yyyy', { 'placeholder': 'dd/mm/yyyy' })
         //Datemask2 mm/dd/yyyy
-        $('#datemask2').inputmask('mm/dd/yyyy', {
-          'placeholder': 'mm/dd/yyyy'
-        })
+        $('#datemask2').inputmask('mm/dd/yyyy', { 'placeholder': 'mm/dd/yyyy' })
         //Money Euro
         $('[data-mask]').inputmask()
 
@@ -827,15 +804,15 @@
           }
         })
         //Date range as a button
-        $('#daterange-btn').daterangepicker({
+        $('#daterange-btn').daterangepicker(
+          {
             ranges: {
               'Today': [moment(), moment()],
               'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
               'Last 7 Days': [moment().subtract(6, 'days'), moment()],
               'Last 30 Days': [moment().subtract(29, 'days'), moment()],
               'This Month': [moment().startOf('month'), moment().endOf('month')],
-              'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf(
-                'month')]
+              'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
             },
             startDate: moment().subtract(29, 'days'),
             endDate: moment()
@@ -894,9 +871,7 @@
 
       myDropzone.on("addedfile", function (file) {
         // Hookup the start button
-        file.previewElement.querySelector(".start").onclick = function () {
-          myDropzone.enqueueFile(file);
-        };
+        file.previewElement.querySelector(".start").onclick = function () { myDropzone.enqueueFile(file); };
       });
 
       // Update the total progress bar
@@ -925,7 +900,7 @@
       document.querySelector("#actions .cancel").onclick = function () {
         myDropzone.removeAllFiles(true);
       };
-      // DropzoneJS Demo Code End
+  // DropzoneJS Demo Code End
     </script>
 </body>
 
